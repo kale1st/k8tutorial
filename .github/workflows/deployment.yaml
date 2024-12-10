@@ -40,7 +40,7 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl set image deployment/k8stutorial-deployment k8stutorial=azizkale/k8tutorial:latest --namespace k8tutorialnamespace
+          kubectl set image deployment/k8stutorial-deployment k8tutorial=azizkale/k8tutorial:latest --namespace k8tutorialnamespace
 
       - name: Restart Kubernetes Deployment
         run: |
